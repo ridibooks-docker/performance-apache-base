@@ -25,7 +25,7 @@ RUN docker-php-source extract \
 && pecl config-set preferred_state stable \
 
 # Install node
-&& curl -sL https://deb.nodesource.com/setup_8.x | bash - \
+&& curl -sL https://deb.nodesource.com/setup_12.x | bash - \
 && apt-get install nodejs -y \
 
 # Install yarn
