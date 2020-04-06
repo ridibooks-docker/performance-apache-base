@@ -16,9 +16,7 @@ RUN docker-php-source extract \
 && rm couchbase.key  \
 && add-apt-repository 'deb http://packages.couchbase.com/ubuntu trusty trusty/main' \
 && apt-get update \
-&& apt-get install -y build-essential libcouchbase2-core libcouchbase-dev libcouchbase2-bin libcouchbase2-libevent \
-&& pecl install couchbase-2.2.3 \
-&& docker-php-ext-enable couchbase \
+&& apt-get install -y build-essential \
 
 # Install xdebug php extention
 && pecl config-set preferred_state beta \
